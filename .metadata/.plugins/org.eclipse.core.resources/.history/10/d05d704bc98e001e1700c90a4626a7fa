@@ -1,0 +1,12 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class PaginationPage {
+	WebDriver driver;
+
+    public PaginationPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+}

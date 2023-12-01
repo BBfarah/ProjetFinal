@@ -1,0 +1,11 @@
+@Login
+Feature: LogIn
+  As a User I want to logIn
+  
+  Scenario: LogIn
+    Given user on login page
+    When user enters <email> and <password>
+    Then user is connected
+  Examples:
+      | email                 | password |
+      | mouna.makni@talan.com | Admin09$ |

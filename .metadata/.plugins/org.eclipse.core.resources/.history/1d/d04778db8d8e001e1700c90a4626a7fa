@@ -1,0 +1,41 @@
+@Add
+Feature: As an administrator I want to add a user to the list of users
+
+  Background: LogIn
+    Given user on login page
+    When user enters mouna.makni@talan.com and Admin09$
+    Then user is connected
+
+  @AddUser
+  Scenario: Add a new user to the list of users
+    When Administrator clicks on users button
+    And Administrator clicks on the Add User button
+    And fills in tne NAME and FIRSTNAME and EMAIL and Select ROLE and COURSE
+    And clicks on Save
+    Then the user is successfully added to the list of users
+
+  @AddUser2
+  Scenario: Verify adding a user with incorrect first and last names
+    When Administrator clicks on users button
+    And Administrator clicks on the Add User button
+    And fills in the NAME and FIRSTNAME with numbers and special characters
+    And provides a valid email selects ROLE and COURSE
+    And clicks on Save
+    Then adding the user2 fails
+
+  @AddUser3
+  Scenario: Verify adding a user with an incorrect email format
+    When Administrator clicks on users button
+    And Administrator clicks on the Add User button
+    And fills in the NAME and FIRSTNAME
+    And provides an email with an invalid format selects ROLE and COURSE
+    And clicks on Save
+    Then adding the user3 fails
+
+  @AddAdmin
+  Scenario: Verify adding a new Admin user
+    When Administrator clicks on users button
+    And Administrator clicks on the Add User button
+    And fills in the NAME and FIRSTNAME and EMAIL and select ROLE
+    And clicks on Save
+    Then the new Admin user is added

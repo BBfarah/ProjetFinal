@@ -1,0 +1,20 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class DisplayPage {
+	WebDriver driver;
+
+    public DisplayPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    By User_Btn = By.xpath("//span[contains(text(),'Utilisateurs')]");
+    By checkList = By.xpath("//h4[contains(text(),'Liste des utilisateurs')]");
+    public void ClickOnUser_Btn(){
+        driver.findElement(User_Btn).click();
+}
+    public void CheckList() {
+		driver.findElement(checkList).isDisplayed();
+	}
+}

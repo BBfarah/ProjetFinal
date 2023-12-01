@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.Given"/>
+    <fullyQualifiedTypeName name="pages.SearchPage"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="pages.LoginPage"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.And"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="pages.AddPage"/>
+    <fullyQualifiedTypeName name="pages.PaginationPage"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
+    <fullyQualifiedTypeName name="pages.DisplayPage"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+</qualifiedTypeNameHistroy>

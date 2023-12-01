@@ -1,0 +1,44 @@
+package stepsDefinition;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AddStepDef {
+	@When("Enters BESBESandFarahandfarah.besbes@talan.com")
+	public void enters_besbe_sand_farahandfarah_besbes_talan_com() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@And("Selects ROLE and COURSE")
+	public void selects_role_and_course() {
+	   
+	}
+
+	@When("Enters {int}*!and52897andfarah.besbes@talan.com")
+	public void enters_and52897andfarah_besbes_talan_com(Integer int1) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Enters BESBESandFarahandfarah.besbes.com")
+	public void enters_besbe_sand_farahandfarah_besbes_com() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Enters BARBOUCHEandFarahandfarah.besbes@talan.com")
+	public void enters_barbouch_eand_farahandfarah_besbes_talan_com() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Selects ROLE")
+	public void selects_role() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

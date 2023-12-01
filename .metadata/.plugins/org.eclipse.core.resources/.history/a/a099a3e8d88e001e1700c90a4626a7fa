@@ -1,0 +1,11 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class DisplayPage {
+	WebDriver driver;
+
+    public DisplayPage(WebDriver driver) {
+        this.driver = driver;
+    }
+}

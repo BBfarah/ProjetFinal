@@ -1,0 +1,43 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class PaginationPage {
+	WebDriver driver;
+
+    public PaginationPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    By usersBtn = By.xpath("//span[contains(text(),'Utilisateurs')]");
+    By next_Btn = By.xpath("//button[@class='p-ripple p-element p-paginator-next p-paginator-element p-link']");
+    By chechSecondPage = By.xpath("//span[contains(text(),'11 à 20 de 1221 applications')]");
+    By thirdBtn =  By.xpath("//button[@class='p-ripple p-element p-paginator-page p-paginator-element p-link ng-star-inserted']");
+    By previous_Btn = By .xpath("//button[@class='p-ripple p-element p-paginator-prev p-paginator-element p-link']");
+    By ChechFirstPage = By .xpath("//span[contains(text(),'1 à 10 de 1221 applications')]");
+    By last_Btn = By.xpath("//button[@class='p-ripple p-element p-paginator-last p-paginator-element p-link ng-star-inserted']");
+    By first_Btn = By.xpath("//button[@class='p-ripple p-element p-paginator-first p-paginator-element p-link ng-star-inserted']");
+    public void clickUsersBtn() {
+        driver.findElement(usersBtn).click();
+       }
+    public void clickNext_Btn() {
+        driver.findElement(next_Btn).click();
+       }
+    public String getNbrSecondPage() {
+        return driver.findElement(chechSecondPage).getText();
+    }
+    
+    public void ClickThirdBtn() {
+        driver.findElement(thirdBtn).click();
+       }
+    
+    public void ClickPrevious_Btn() {
+        driver.findElement(previous_Btn).click();
+       }
+    public void ClickLast_Btn() {
+        driver.findElement(last_Btn).click();
+       }
+    public void ClickFirst_Btn() {
+        driver.findElement(first_Btn).click();
+       }
+}

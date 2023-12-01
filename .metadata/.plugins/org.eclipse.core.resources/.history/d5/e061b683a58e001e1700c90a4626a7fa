@@ -1,0 +1,14 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AddPage {
+	WebDriver driver;
+
+    public AddPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    By usersButton = By.xpath("/html/body/app-root/app-admin/p-menubar/div/p-menubarsub/ul/li[3]/a/span[1]");
+    
+}

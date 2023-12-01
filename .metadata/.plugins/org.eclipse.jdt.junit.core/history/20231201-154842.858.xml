@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="SeleniumCucumber" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="stepsDefinition.TestRunner" time="3.862">
+    <testsuite name="Search" time="3.862">
+      <testcase name="Verify searching for a name in a table on different pages" classname="Search" time="3.862"/>
+    </testsuite>
+  </testsuite>
+</testrun>

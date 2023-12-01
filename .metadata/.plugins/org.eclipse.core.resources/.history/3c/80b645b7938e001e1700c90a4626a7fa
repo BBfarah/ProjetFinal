@@ -1,0 +1,63 @@
+package stepsDefinition;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AddStepDef {
+	@When("Enters BESBES and Farah and farah.besbes@talan.com")
+	public void enters_besbes_and_farah_and_farah_besbes_talan_com() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@And("Clicks on Save")
+	public void clicks_on_save() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User is added")
+	public void user_is_added() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Enters {int}*! and {int} and farah.besbes@talan.com")
+	public void enters_and_and_farah_besbes_talan_com(Integer int1, Integer int2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Adding the user2 fails")
+	public void adding_the_user2_fails() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Enters BESBES and Farah and farah.besbes.com")
+	public void enters_besbes_and_farah_and_farah_besbes_com() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Adding the user3 fails")
+	public void adding_the_user3_fails() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Enters BARBOUCHE and Farah and farah.besbes@talan.com")
+	public void enters_barbouche_and_farah_and_farah_besbes_talan_com() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Admin is added")
+	public void admin_is_added() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

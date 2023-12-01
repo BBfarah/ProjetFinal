@@ -1,0 +1,19 @@
+package stepsDefinition;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class DisplayStepDef {
+	
+	@When("Administrator on userPage")
+	public void administrator_on_user_page() {
+	   
+	}
+
+	@Then("check that list of users displayed")
+	public void check_that_list_of_users_displayed() {
+	    
+	}
+
+
+}

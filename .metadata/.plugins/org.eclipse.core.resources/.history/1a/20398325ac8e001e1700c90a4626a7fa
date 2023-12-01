@@ -1,0 +1,47 @@
+Feature: Pagination
+  As an administrator I want to browse through the pages of the user list
+
+  Background: LogIn
+    Given user on login page
+    When user enters mouna.makni@talan.com and Admin09$
+    Then user is connected
+
+  @NextPage1
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks the next button to go to the next page
+    Then Administrator should be on the next page of the user list
+
+  @PreviousPage1
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks the previous button to go back to the previous page
+    Then Administrator should be on the previous page of the user list
+
+  @LastPage1
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks the last button to go to the last page
+    Then Administrator should be on the last page of the user list
+
+  @FirstPage1
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks the first button to go back to the first page
+    Then Administrator should be on the first page of the user list
+
+  @List5
+  Scenario: Browse the user list by the number of users
+    When Administrator clicks the down button to choose five users per page
+    Then the user list should display five users per page
+
+  @list10
+  Scenario: Browse the user list by the number of users
+    When Administrator clicks the down button to choose ten users per page
+    Then the user list should display ten users per page
+
+  @list15
+  Scenario: Browse the user list by the number of users
+    When Administrator clicks the down button to choose fifteen users per page
+    Then the user list should display fifteen users per page
+
+  @list20
+  Scenario: Browse the user list by the number of users
+    When Administrator clicks the down button to choose twenty users per page
+    Then the user list should display twenty users per page

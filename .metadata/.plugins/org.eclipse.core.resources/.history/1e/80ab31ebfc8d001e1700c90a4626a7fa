@@ -1,0 +1,26 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class SearchPage {
+	WebDriver driver;
+	By usersButton = By.xpath("/html/body/app-root/app-admin/p-menubar/div/p-menubarsub/ul/li[3]/a/span[1]");
+    By searchField = By.xpath("//body/app-root[1]/app-admin[1]/app-users[1]/div[1]/p-table[1]/div[1]/div[1]/div[1]/span[1]/input[1]");
+    public SearchPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    public void clickOnUsersButton() {
+        driver.findElement(usersButton).click();
+    }
+    public void enterNameInSearchField(String name) {
+        driver.findElement(searchField).clear();
+        driver.findElement(searchField).sendKeys("AYARI");
+    }
+    public String getUserListText() {
+        WebElement userListElement = driver.findElement(By.xpath("//td[contains(text(),'AYARI')]"));
+        return userListElement.getText();
+    }
+
+}

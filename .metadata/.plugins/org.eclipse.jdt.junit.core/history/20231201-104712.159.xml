@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="SeleniumCucumber" tests="15" started="15" failures="3" errors="1" ignored="0">
+  <testsuite name="stepsDefinition.Runner" time="88.341">
+    <testsuite name="As an administrator I want to add a user to the list of users" time="15.242">
+      <testcase name="Add a new user to the list of users" classname="As an administrator I want to add a user to the list of users" time="4.781">
+        <failure>java.lang.AssertionError: the actual text does not contain the expected text&#13;
+	at stepsDefinition.AddStepDef.user_is_added(AddStepDef.java:44)&#13;
+	at ✽.User is added(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:16)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Verify adding a user with incorrect first and last names" classname="As an administrator I want to add a user to the list of users" time="3.593">
+        <failure>java.lang.AssertionError: the actual text does not contain the expected text&#13;
+	at stepsDefinition.AddStepDef.adding_the_user2_fails(AddStepDef.java:56)&#13;
+	at ✽.Adding the user2 fails(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:29)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Verify adding a user with an incorrect email format" classname="As an administrator I want to add a user to the list of users" time="3.488"/>
+      <testcase name="Verify adding a new Admin user" classname="As an administrator I want to add a user to the list of users" time="3.379">
+        <failure>java.lang.AssertionError: the actual text does not contain the expected text&#13;
+	at stepsDefinition.AddStepDef.admin_is_added(AddStepDef.java:87)&#13;
+	at ✽.Admin is added(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:55)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="displaying the users page" time="2.947">
+      <testcase name="Verify that list of user display" classname="displaying the users page" time="2.947"/>
+    </testsuite>
+    <testsuite name="Pagination" time="12.645">
+      <testcase name="Verify the presence of pagination and navigate through the user list #1" classname="Pagination" time="3.325"/>
+      <testcase name="Verify the presence of pagination and navigate through the user list #2" classname="Pagination" time="3.167"/>
+      <testcase name="Verify the presence of pagination and navigate through the user list #3" classname="Pagination" time="3.127"/>
+      <testcase name="Verify the presence of pagination and navigate through the user list #4" classname="Pagination" time="3.026"/>
+    </testsuite>
+    <testsuite name="Search" time="56.055">
+      <testcase name="Verify user search by keyword #1" classname="Search" time="3.208"/>
+      <testcase name="Verify user search by keyword #2" classname="Search" time="3.255"/>
+      <testcase name="Verify user search by keyword #3" classname="Search" time="3.07"/>
+      <testcase name="Verify user search by keyword #4" classname="Search" time="3.296"/>
+      <testcase name="Verify searching for a name in a table on different pages" classname="Search" time="43.226">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'HEDHLI')]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-6RL2VVA', ip: '10.2.1.141', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59672}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afb5bb57085f2fdc35eb5f66b89b41ac
+*** Element info: {Using=xpath, value=//td[contains(text(),'HEDHLI')]}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pages.SearchPage.getUserListText5(SearchPage.java:58)&#13;
+	at stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_username(SearchStepDef.java:75)&#13;
+	at ✽.display the user list filtered by username(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Search.feature:39)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="LogIn" time="1.451">
+      <testcase name="LogIn" classname="LogIn" time="1.451"/>
+    </testsuite>
+  </testsuite>
+</testrun>

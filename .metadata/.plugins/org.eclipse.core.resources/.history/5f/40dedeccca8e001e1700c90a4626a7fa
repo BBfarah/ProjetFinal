@@ -1,0 +1,19 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class PaginationPage {
+	WebDriver driver;
+
+    public PaginationPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    By usersButton = By.xpath("//span[contains(text(),'Utilisateurs')]");
+    
+    public void clickUsersButton() {
+        driver.findElement(usersButton).click();
+       
+    }
+    }
+

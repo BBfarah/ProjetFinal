@@ -1,0 +1,39 @@
+@Search
+Feature: Search
+  As an administrator I want to search in the user list
+
+  Background: LogIn
+    Given user on login page
+    When user enters mouna.makni@talan.com and Admin09$
+    Then user is connected
+
+  @SearchName
+  Scenario: Verify user search by keyword
+    When Administrator clicks on users button
+    And Administrator enters the name AYARI in the search field
+    Then display the user list filtered by name
+
+  @SearchFirstName
+  Scenario: Verify user search by keyword
+    When Administrator clicks on users button
+    And Administrator enters the firtname Asma in the search field
+    Then display the user list filtered by firstname
+
+  @SearchMail
+  Scenario: Verify user search by keyword
+    When Administrator clicks on users button
+    And Administrator enters the mail asmaayari@gmail.com in the search field
+    Then display the user list filtered by mail
+
+  @SearchLetter
+  Scenario: Verify user search by keyword
+    When Administrator clicks on users button
+    And Administrator enters the letter Z in the search field
+    Then display the user list filtered by letter
+
+  @SearchNameInDifferentPages
+  Scenario: Verify searching for a name in a table on different pages
+    When Administrator clicks on users button
+    And Administrator enters the name AYARI in the search field
+    And Administrator moves to another page
+    Then display the user list filtered by username

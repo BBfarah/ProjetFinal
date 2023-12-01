@@ -1,0 +1,57 @@
+package stepsDefinition;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AddStepDef {
+	@When("Administrator clicks on the Add User button")
+	public void administrator_clicks_on_the_add_user_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@And("Clicks Role and clicks Mentor and clicks Cursus and clicks cursustest")
+	public void clicks_role_and_clicks_mentor_and_clicks_cursus_and_clicks_cursustest() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@And("clicks on Save")
+	public void clicks_on_save() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the user is successfully added to the list of users")
+	public void the_user_is_successfully_added_to_the_list_of_users() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("adding the user2 fails")
+	public void adding_the_user2_fails() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("adding the user3 fails")
+	public void adding_the_user3_fails() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("Clicks Role and clicks Admin")
+	public void clicks_role_and_clicks_admin() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the new Admin user is added")
+	public void the_new_admin_user_is_added() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+}

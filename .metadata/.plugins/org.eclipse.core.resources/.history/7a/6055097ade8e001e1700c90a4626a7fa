@@ -1,0 +1,63 @@
+package stepsDefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.PaginationPage;
+
+public class PaginationStepDef {
+	WebDriver driver = Hooks.driver ;
+    PaginationPage pagination;
+    
+	@When("Administrator clicks on usersBtn")
+	public void administrator_clicks_on_users_button() {
+       pagination = new PaginationPage (driver);
+	   pagination.clickUsersBtn();
+	}
+	@When("Administrator clicks the nextButton to go to the nextPage")
+	public void administrator_clicks_the_next_button_to_go_to_the_next_page() {
+		pagination.clickNextBtn();
+	    
+	}
+
+	@Then("Administrator should be on the nextPage of the user list")
+	public void administrator_should_be_on_the_next_page_of_the_user_list() {
+		String Predictedtext = "11 à 20 de 1221 application";
+		String currenttext = pagination.getNbrSecondPage();
+		assert currenttext.contains(Predictedtext) : "the current text  contain the predicted text";
+	    
+	}
+
+	@When("Administrator clicks the previousButton to go back to the previousPage")
+	public void administrator_clicks_the_previous_button_to_go_back_to_the_previous_page() {
+	   
+	}
+
+	@Then("Administrator should be on the previousPage of the user list")
+	public void administrator_should_be_on_the_previous_page_of_the_user_list() {
+	    
+	}
+
+	@When("Administrator clicks the lastButton to go to the lastPage")
+	public void administrator_clicks_the_last_button_to_go_to_the_last_page() {
+	    
+	}
+
+	@Then("Administrator should be on the lastPage of the user list")
+	public void administrator_should_be_on_the_last_page_of_the_user_list() {
+	   
+	}
+
+	@When("Administrator clicks the firstButton to go back to the firstPage")
+	public void administrator_clicks_the_first_button_to_go_back_to_the_first_page() {
+	   
+	}
+
+	@Then("Administrator should be on the firstPage of the user list")
+	public void administrator_should_be_on_the_first_page_of_the_user_list() {
+	    
+	}
+
+
+}

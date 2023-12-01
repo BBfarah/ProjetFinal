@@ -1,0 +1,25 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	WebDriver driver;
+	By connexion = By.xpath("");
+	By email = By.xpath("");
+	By password = By.xpath("");
+	By login = By.xpath("");
+	
+	public LoginPage(WebDriver driver) {
+		 this.driver = driver ;
+	 }
+	public void clickMenu() {
+		driver.findElement(connexion).click();
+	}
+	public void credentials(String mail, String pass) {
+		driver.findElement(email).sendKeys(mail);
+		driver.findElement(password).sendKeys(pass);
+		driver.findElement(login).click();
+	}
+	
+
+}

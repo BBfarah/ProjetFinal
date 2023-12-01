@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="SeleniumCucumber" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="stepsDefinition.Runner" time="3.912">
+    <testsuite name="Pagination" time="3.912">
+      <testcase name="Verify the presence of pagination and navigate through the user list #2" classname="Pagination" time="3.912">
+        <error>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression app-admin.ng-star-inserted:nth-child(3) app-users.ng-star-inserted:nth-child(3) div.card:nth-child(1) div:nth-child(3) div:nth-child(1) p-paginator.p-element div.p-paginator.p-component.ng-star-inserted &gt; span.p-paginator-current.ng-star-inserted:nth-child(1) because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'app-admin.ng-star-inserted:nth-child(3) app-users.ng-star-inserted:nth-child(3) div.card:nth-child(1) div:nth-child(3) div:nth-child(1) p-paginator.p-element div.p-paginator.p-component.ng-star-inserted &gt; span.p-paginator-current.ng-star-inserted:nth-child(1)' is not a valid XPath expression.
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-6RL2VVA', ip: '10.2.1.141', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60137}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71fefc3336b33f0ee9b225c3eb989a36
+*** Element info: {Using=xpath, value=app-admin.ng-star-inserted:nth-child(3) app-users.ng-star-inserted:nth-child(3) div.card:nth-child(1) div:nth-child(3) div:nth-child(1) p-paginator.p-element div.p-paginator.p-component.ng-star-inserted &gt; span.p-paginator-current.ng-star-inserted:nth-child(1)}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at pages.PaginationPage.getNbrSecondPage(PaginationPage.java:30)&#13;
+	at stepsDefinition.PaginationStepDef.administrator_should_be_on_the_previous_page_of_the_user_list(PaginationStepDef.java:45)&#13;
+	at ✽.Administrator should be on the previousPage of the user list(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/PaginationCucumber.feature:21)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

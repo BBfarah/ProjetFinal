@@ -1,0 +1,71 @@
+package stepsDefinition;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AddStepDef {
+	@When("Administrator clicks on the Add User button")
+	public void administrator_clicks_on_the_add_user_button() {
+	    
+	}
+
+	@And("fills in tne NAME and FIRSTNAME and EMAIL and Select ROLE and COURSE")
+	public void fills_in_tne_name_and_firstname_and_email_and_select_role_and_course() {
+	   
+	}
+
+	@And("clicks on Save")
+	public void clicks_on_save() {
+	   
+	}
+
+	@Then("the user is successfully added to the list of users")
+	public void the_user_is_successfully_added_to_the_list_of_users() {
+	    
+	}
+
+	@When("fills in the NAME and FIRSTNAME with numbers and special characters")
+	public void fills_in_the_name_and_firstname_with_numbers_and_special_characters() {
+	    
+	}
+
+	@And("provides a valid email selects ROLE and COURSE")
+	public void provides_a_valid_email_selects_role_and_course() {
+	   
+	}
+
+	@Then("adding the user2 fails")
+	public void adding_the_user2_fails() {
+	    
+	}
+
+	@When("fills in the NAME and FIRSTNAME")
+	public void fills_in_the_name_and_firstname() {
+	    
+	}
+
+	@And("provides an email with an invalid format selects ROLE and COURSE")
+	public void provides_an_email_with_an_invalid_format_selects_role_and_course() {
+	    
+	}
+
+	@Then("adding the user3 fails")
+	public void adding_the_user3_fails() {
+	    
+	}
+
+	@When("fills in the NAME and FIRSTNAME and EMAIL and select ROLE")
+	public void fills_in_the_name_and_firstname_and_email_and_select_role() {
+	    
+	}
+
+	@Then("the new Admin user is added")
+	public void the_new_admin_user_is_added() {
+	    
+	}
+
+
+
+
+}

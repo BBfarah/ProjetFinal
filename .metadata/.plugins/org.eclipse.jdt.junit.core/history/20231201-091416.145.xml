@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="SeleniumCucumber" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="stepsDefinition.Runner" time="3.781">
+    <testsuite name="Pagination" time="3.781">
+      <testcase name="Verify the presence of pagination and navigate through the user list #3" classname="Pagination" time="3.781"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,25 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class PaginationPage {
+	WebDriver driver;
+
+    public PaginationPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    By usersButton = By.xpath("//span[contains(text(),'Utilisateurs')]");
+    By nextBtn = By.xpath("//body/app-root[1]/app-admin[1]/app-users[1]/div[1]/div[1]/div[1]/p-paginator[1]/div[1]/button[3]/span[1]");
+    By nbrSecondPage = By.xpath("//span[contains(text(),'11 à 20 de 1221 applications')]");
+    
+    public void clickUsersBtn() {
+        driver.findElement(usersButton).click();
+       }
+    public void clickNextBtn() {
+        driver.findElement(nextBtn).click();
+       }
+    public String getNbrSecondPage() {
+        return driver.findElement(nbrSecondPage).getText();
+    }
+}

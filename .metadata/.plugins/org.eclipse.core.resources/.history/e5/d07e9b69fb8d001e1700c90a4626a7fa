@@ -1,0 +1,26 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class SearchPage {
+	WebDriver driver;
+	By usersButton = By.xpath("/html/body/app-root/app-admin/p-menubar/div/p-menubarsub/ul/li[3]/a/span[1]");
+    By searchField = By.xpath("//*[@id=\"pr_id_20\"]/div[1]/div/span/input");
+    public SearchPage(WebDriver driver) {
+        this.driver = driver;
+    }
+    public void clickOnUsersButton() {
+        driver.findElement(usersButton).click();
+    }
+    public void enterNameInSearchField(String name) {
+        driver.findElement(searchField).clear();
+        driver.findElement(searchField).sendKeys("AYARI");
+    }
+    public String getUserListText() {
+        WebElement userListElement = driver.findElement(By.xpath("//*[@id=\"pr_id_12-table\"]/tbody/tr/td[1]"));
+        return userListElement.getText();
+    }
+
+}

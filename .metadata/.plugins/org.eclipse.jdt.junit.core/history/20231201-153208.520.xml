@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="SeleniumCucumber" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="stepsDefinition.TestRunner" time="3.632">
+    <testsuite name="Search" time="3.632">
+      <testcase name="Verify searching for a name in a table on different pages" classname="Search" time="3.632">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'Administrator enters the name HEDHLI in the search field' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("Administrator enters the name HEDHLI in the search field")
+public void administrator_enters_the_name_hedhli_in_the_search_field() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

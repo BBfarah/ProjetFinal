@@ -1,0 +1,27 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	WebDriver driver;
+	By menuBtn = By.xpath("//android.view.View[@text=\"\"]");
+	By connexion = By.xpath("//android.view.MenuItem[@text=\"CONNEXION\"]");
+	By email = By.xpath("//android.widget.EditText[@resource-id=\"email\"]");
+	By password = By.xpath("//android.widget.EditText[@resource-id=\"password\"]");
+	By login = By.xpath("//android.widget.Button[@text=\"S'identifier\"]");
+	
+	public LoginPage(WebDriver driver) {
+		 this.driver = driver ;
+	 }
+	public void clickMenu() {
+		driver.findElement(menuBtn).click();
+		driver.findElement(connexion).click();
+	}
+	public void credentials(String mail, String pass) {
+		driver.findElement(email).sendKeys(mail);
+		driver.findElement(password).sendKeys(pass);
+		driver.findElement(login).click();
+	}
+	
+
+}
