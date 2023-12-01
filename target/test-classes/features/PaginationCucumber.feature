@@ -1,0 +1,34 @@
+@Pagination
+Feature: Pagination
+  As an administrator I want to browse through the pages of the user list
+
+  Background: LogIn
+    Given user on login page
+    When user enters mouna.makni@talan.com and Admin09$
+    Then user is connected
+
+  @NextPage
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks on usersBtn
+    And Administrator clicks the nextButton to go to the nextPage
+    Then Administrator should be on the nextPage of the user list
+
+  @PreviousPage
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks on usersBtn
+    And Administartor on ThirdPage
+    And Administrator clicks the previousButton to go back to the previousPage
+    Then Administrator should be on the previousPage of the user list
+
+  @LastPage
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks on usersBtn
+    And Administrator clicks the lastButton to go to the lastPage
+    Then Administrator should be on the lastPage of the user list
+
+  @FirstPage
+  Scenario: Verify the presence of pagination and navigate through the user list
+    When Administrator clicks on usersBtn
+    And Administartor on ThirdPage
+    And Administrator clicks the firstButton to go back to the firstPage
+    Then Administrator should be on the firstPage of the user list
