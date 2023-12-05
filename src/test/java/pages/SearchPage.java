@@ -9,7 +9,7 @@ public class SearchPage {
 	By usersButton = By.xpath("/html/body/app-root/app-admin/p-menubar/div/p-menubarsub/ul/li[3]/a/span[1]");
     By searchField = By.xpath("//body/app-root[1]/app-admin[1]/app-users[1]/div[1]/p-table[1]/div[1]/div[1]/div[1]/span[1]/input[1]");
     By LASTPageButton = By.xpath("//button[@class='p-ripple p-element p-paginator-last p-paginator-element p-link ng-star-inserted']");
-    By expression = By .xpath ("//td[contains(text(),\"Pas d'utilisateurs trouvés.\")]");
+    By expression = By .xpath ("//td[contains(text(),\"Pas d'utilisateurs trouv\u00E9s.\")]");
     public SearchPage(WebDriver driver) {
         this.driver = driver;
     }

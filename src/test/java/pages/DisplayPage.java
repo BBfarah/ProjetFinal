@@ -12,7 +12,7 @@ public class DisplayPage {
     By User_Btn = By.xpath("//span[contains(text(),'Utilisateurs')]");
     By checkList = By.xpath("//h4[contains(text(),'Liste des utilisateurs')]");
     By checkName = By.xpath("//th[contains(text(),'Nom')]");
-    By checkFirstname = By.xpath("//th[contains(text(),'Prénom')]");
+    By checkFirstname = By.xpath("//th[contains(text(),'Pr"+"\u00E9"+"nom')]");
     By checkMail = By.xpath("//th[contains(text(),'Email')]");
     By checkDate = By .xpath("//thead/tr[1]/th[4]");
     By checkRole = By .xpath("//thead/tr[1]/th[5]");

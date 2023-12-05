@@ -10,6 +10,6 @@ import io.cucumber.junit.CucumberOptions;
 tags="",monochrome=true, plugin = {
 		"pretty", "html:target/rapport.html", "json:target/rapport.json"
 })
-public class TestRunner {
+public class Runner {
 
 }

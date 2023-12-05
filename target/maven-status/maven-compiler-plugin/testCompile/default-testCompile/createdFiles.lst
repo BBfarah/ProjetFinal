@@ -1,0 +1,12 @@
+pages\LoginPage.class
+pages\PaginationPage.class
+stepsDefinition\PaginationStepDef.class
+stepsDefinition\LoginStepDef.class
+pages\DisplayPage.class
+pages\AddPage.class
+stepsDefinition\Hooks.class
+pages\SearchPage.class
+stepsDefinition\SearchStepDef.class
+stepsDefinition\AddStepDef.class
+stepsDefinition\DisplayStepDef.class
+stepsDefinition\TestRunner.class

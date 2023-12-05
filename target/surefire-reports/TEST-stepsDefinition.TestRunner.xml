@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="stepsDefinition.TestRunner" time="142.319" tests="15" errors="2" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\fbesbes\Desktop\SeleniumCucumberProjetFinal\SeleniumCucumber\target\test-classes;C:\Users\fbesbes\Desktop\SeleniumCucumberProjetFinal\SeleniumCucumber\target\classes;C:\Users\fbesbes\.m2\repository\io\appium\java-client\7.6.0\java-client-7.6.0.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\fbesbes\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\fbesbes\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\fbesbes\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\fbesbes\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\fbesbes\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\fbesbes\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\fbesbes\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\fbesbes\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\fbesbes\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\fbesbes\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\fbesbes\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-context\5.3.10\spring-context-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-aop\5.3.10\spring-aop-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-beans\5.3.10\spring-beans-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-core\5.3.10\spring-core-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-jcl\5.3.10\spring-jcl-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-expression\5.3.10\spring-expression-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\fbesbes\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\fbesbes\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\fbesbes\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\fbesbes\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\fbesbes\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\fbesbes\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\fbesbes\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\fbesbes\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\fbesbes\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\fbesbes\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\fbesbes\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\fbesbes\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\fbesbes\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\fbesbes\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.0\webdrivermanager-5.6.0.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\fbesbes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\fbesbes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\fbesbes\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\fbesbes\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\fbesbes\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\fbesbes\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\fbesbes\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\fbesbes\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\fbesbes\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\fbesbes\AppData\Local\Temp\surefire3511222010041672930\surefirebooter-20231204122039326_3.jar C:\Users\fbesbes\AppData\Local\Temp\surefire3511222010041672930 2023-12-04T12-20-39_070-jvmRun1 surefire-20231204122039326_1tmp surefire_0-20231204122039326_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\fbesbes\Desktop\SeleniumCucumberProjetFinal\SeleniumCucumber\target\test-classes;C:\Users\fbesbes\Desktop\SeleniumCucumberProjetFinal\SeleniumCucumber\target\classes;C:\Users\fbesbes\.m2\repository\io\appium\java-client\7.6.0\java-client-7.6.0.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\fbesbes\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\fbesbes\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\fbesbes\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\fbesbes\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\fbesbes\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\fbesbes\.m2\repository\commons-validator\commons-validator\1.7\commons-validator-1.7.jar;C:\Users\fbesbes\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\fbesbes\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar;C:\Users\fbesbes\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\fbesbes\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\fbesbes\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-context\5.3.10\spring-context-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-aop\5.3.10\spring-aop-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-beans\5.3.10\spring-beans-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-core\5.3.10\spring-core-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-jcl\5.3.10\spring-jcl-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\springframework\spring-expression\5.3.10\spring-expression-5.3.10.jar;C:\Users\fbesbes\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\fbesbes\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\fbesbes\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\fbesbes\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\fbesbes\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\fbesbes\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\fbesbes\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\fbesbes\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\fbesbes\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\fbesbes\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\fbesbes\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\fbesbes\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\fbesbes\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\fbesbes\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\fbesbes\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\fbesbes\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\fbesbes\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.0\webdrivermanager-5.6.0.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\fbesbes\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\fbesbes\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\fbesbes\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\fbesbes\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\fbesbes\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\fbesbes\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\fbesbes\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\fbesbes\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\fbesbes\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\fbesbes\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\fbesbes\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\fbesbes"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\fbesbes\Desktop\SeleniumCucumberProjetFinal\SeleniumCucumber"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\fbesbes\AppData\Local\Temp\surefire3511222010041672930\surefirebooter-20231204122039326_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
+    <property name="user.name" value="fbesbes"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\fbesbes\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\fbesbes\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="C:\Users\fbesbes\Desktop\SeleniumCucumberProjetFinal\SeleniumCucumber"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\wamp64\bin\mysql\mysql8.0.31\bin;C:\Program Files\nodejs\;C:\Users\fbesbes\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\apache-maven-3.9.5-bin\apache-maven-3.9.5\bin\;C:\Program Files\Java\jdk-17\bin;C:\Users\fbesbes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fbesbes\AppData\Roaming\npm;C:\Program Files\Java\apache-maven-3.9.5-bin\apache-maven-3.9.5\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.9+11-LTS-201"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Add a new user to the list of users" classname="As an administrator I want to add a user to the list of users" time="5.629">
+    <failure message="the actual text does not contain the expected text" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: the actual text does not contain the expected text
+	at stepsDefinition.AddStepDef.user_is_added(AddStepDef.java:44)
+	at ✽.User is added(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:16)
+]]></failure>
+    <system-out><![CDATA[
+@Add @AddUser
+Scenario Outline: Add a new user to the list of users                       # src/test/resources/features/Add.feature:20
+  Given user on login page                                                  # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                       # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                    # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on userbutton                                   # stepsDefinition.AddStepDef.administrator_clicks_on_userbutton()
+  And Administrator clicks on the Add User button                           # stepsDefinition.AddStepDef.administrator_clicks_on_the_add_user_button()
+  And Enters BESBES and Farah and farah.besbes@talan.com                    # stepsDefinition.AddStepDef.enters_besbes_and_farah_and_farah_besbes_talan_com()
+  And Clicks Role and clicks Mentor and clicks Cursus and clicks cursustest # stepsDefinition.AddStepDef.clicks_role_and_clicks_mentor_and_clicks_cursus_and_clicks_cursustest()
+  And Clicks on Save                                                        # stepsDefinition.AddStepDef.clicks_on_save()
+  Then User is added                                                        # stepsDefinition.AddStepDef.user_is_added()
+      java.lang.AssertionError: the actual text does not contain the expected text
+	at stepsDefinition.AddStepDef.user_is_added(AddStepDef.java:44)
+	at âœ½.User is added(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:16)
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 40561
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:20:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify adding a user with incorrect first and last names" classname="As an administrator I want to add a user to the list of users" time="4.235">
+    <failure message="the actual text does not contain the expected text" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: the actual text does not contain the expected text
+	at stepsDefinition.AddStepDef.adding_the_user2_fails(AddStepDef.java:56)
+	at ✽.Adding the user2 fails(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:29)
+]]></failure>
+    <system-out><![CDATA[
+@Add @AddUser2
+Scenario Outline: Verify adding a user with incorrect first and last names  # src/test/resources/features/Add.feature:33
+  Given user on login page                                                  # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                       # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                    # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on userbutton                                   # stepsDefinition.AddStepDef.administrator_clicks_on_userbutton()
+  And Administrator clicks on the Add User button                           # stepsDefinition.AddStepDef.administrator_clicks_on_the_add_user_button()
+  And Enters 1258 and 52897 and farah.besbes@talan.com                      # stepsDefinition.AddStepDef.enters_and_and_farah_besbes_talan_com(java.lang.Integer,java.lang.Integer)
+  And Clicks Role and clicks Mentor and clicks Cursus and clicks cursustest # stepsDefinition.AddStepDef.clicks_role_and_clicks_mentor_and_clicks_cursus_and_clicks_cursustest()
+  And Clicks on Save                                                        # stepsDefinition.AddStepDef.clicks_on_save()
+  Then Adding the user2 fails                                               # stepsDefinition.AddStepDef.adding_the_user2_fails()
+      java.lang.AssertionError: the actual text does not contain the expected text
+	at stepsDefinition.AddStepDef.adding_the_user2_fails(AddStepDef.java:56)
+	at âœ½.Adding the user2 fails(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:29)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 14693
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:20:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify adding a user with an incorrect email format" classname="As an administrator I want to add a user to the list of users" time="4.289">
+    <system-out><![CDATA[
+@Add @AddUser3
+Scenario Outline: Verify adding a user with an incorrect email format       # src/test/resources/features/Add.feature:46
+  Given user on login page                                                  # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                       # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                    # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on userbutton                                   # stepsDefinition.AddStepDef.administrator_clicks_on_userbutton()
+  And Administrator clicks on the Add User button                           # stepsDefinition.AddStepDef.administrator_clicks_on_the_add_user_button()
+  And Enters BESBES and Farah and farah.besbes.com                          # stepsDefinition.AddStepDef.enters_besbes_and_farah_and_farah_besbes_com()
+  And Clicks Role and clicks Mentor and clicks Cursus and clicks cursustest # stepsDefinition.AddStepDef.clicks_role_and_clicks_mentor_and_clicks_cursus_and_clicks_cursustest()
+  And Clicks on Save                                                        # stepsDefinition.AddStepDef.clicks_on_save()
+  Then Adding the user3 fails                                               # stepsDefinition.AddStepDef.adding_the_user3_fails()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 20773
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:20:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify adding a new Admin user" classname="As an administrator I want to add a user to the list of users" time="4.075">
+    <failure message="the actual text does not contain the expected text" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: the actual text does not contain the expected text
+	at stepsDefinition.AddStepDef.admin_is_added(AddStepDef.java:87)
+	at ✽.Admin is added(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:55)
+]]></failure>
+    <system-out><![CDATA[
+@Add @AddAdmin
+Scenario Outline: Verify adding a new Admin user            # src/test/resources/features/Add.feature:59
+  Given user on login page                                  # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$       # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                    # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on userbutton                   # stepsDefinition.AddStepDef.administrator_clicks_on_userbutton()
+  And Administrator clicks on the Add User button           # stepsDefinition.AddStepDef.administrator_clicks_on_the_add_user_button()
+  And Enters BARBOUCHE and Farah and farah.besbes@talan.com # stepsDefinition.AddStepDef.enters_barbouche_and_farah_and_farah_besbes_talan_com()
+  And Clicks RoleAdmin and clicks Admin                     # stepsDefinition.AddStepDef.clicks_role_admin_and_clicks_admin()
+  And Clicks on Save                                        # stepsDefinition.AddStepDef.clicks_on_save()
+  Then Admin is added                                       # stepsDefinition.AddStepDef.admin_is_added()
+      java.lang.AssertionError: the actual text does not contain the expected text
+	at stepsDefinition.AddStepDef.admin_is_added(AddStepDef.java:87)
+	at âœ½.Admin is added(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Add.feature:55)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 5953
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:20:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify that list of user display" classname="displaying the users page" time="43.838">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//th[contains(text(),&apos;PrÃ©nom&apos;)]&quot;}&#10;  (Session info: chrome=119.0.6045.160)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;TALAN-6RL2VVA&apos;, ip: &apos;10.2.1.141&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7d256ee7b7a9251a1c8255a5936bf914&#10;*** Element info: {Using=xpath, value=//th[contains(text(),&apos;PrÃ©nom&apos;)]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//th[contains(text(),'PrÃ©nom')]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-6RL2VVA', ip: '10.2.1.141', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d256ee7b7a9251a1c8255a5936bf914
+*** Element info: {Using=xpath, value=//th[contains(text(),'PrÃ©nom')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.DisplayPage.CheckFirstname(DisplayPage.java:31)
+	at stepsDefinition.DisplayStepDef.check_that_list_of_users_displayed(DisplayStepDef.java:22)
+	at ✽.check that list of users displayed(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Display.feature:11)
+]]></error>
+    <system-out><![CDATA[
+@Display
+Scenario: Verify that list of user display            # src/test/resources/features/Display.feature:9
+  Given user on login page                            # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$ # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                              # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator on userPage                      # stepsDefinition.DisplayStepDef.administrator_on_user_page()
+  Then check that list of users displayed             # stepsDefinition.DisplayStepDef.check_that_list_of_users_displayed()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//th[contains(text(),'PrÃƒÂ©nom')]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-6RL2VVA', ip: '10.2.1.141', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d256ee7b7a9251a1c8255a5936bf914
+*** Element info: {Using=xpath, value=//th[contains(text(),'PrÃƒÂ©nom')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.DisplayPage.CheckFirstname(DisplayPage.java:31)
+	at stepsDefinition.DisplayStepDef.check_that_list_of_users_displayed(DisplayStepDef.java:22)
+	at âœ½.check that list of users displayed(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Display.feature:11)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 9274
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:21:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the presence of pagination and navigate through the user list #1" classname="Pagination" time="3.745">
+    <failure message="the current text  contain the predicted text" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: the current text  contain the predicted text
+	at stepsDefinition.PaginationStepDef.administrator_should_be_on_the_next_page_of_the_user_list(PaginationStepDef.java:28)
+	at ✽.Administrator should be on the nextPage of the user list(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/PaginationCucumber.feature:14)
+]]></failure>
+    <system-out><![CDATA[
+@Pagination @NextPage
+Scenario: Verify the presence of pagination and navigate through the user list # src/test/resources/features/PaginationCucumber.feature:11
+  Given user on login page                                                     # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                          # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                       # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on usersBtn                                        # stepsDefinition.PaginationStepDef.administrator_clicks_on_users_button()
+  And Administrator clicks the nextButton to go to the nextPage                # stepsDefinition.PaginationStepDef.administrator_clicks_the_next_button_to_go_to_the_next_page()
+  Then Administrator should be on the nextPage of the user list                # stepsDefinition.PaginationStepDef.administrator_should_be_on_the_next_page_of_the_user_list()
+      java.lang.AssertionError: the current text  contain the predicted text
+	at stepsDefinition.PaginationStepDef.administrator_should_be_on_the_next_page_of_the_user_list(PaginationStepDef.java:28)
+	at âœ½.Administrator should be on the nextPage of the user list(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/PaginationCucumber.feature:14)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 57315
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:21:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the presence of pagination and navigate through the user list #2" classname="Pagination" time="4.356">
+    <system-out><![CDATA[
+@Pagination @PreviousPage
+Scenario: Verify the presence of pagination and navigate through the user list # src/test/resources/features/PaginationCucumber.feature:17
+  Given user on login page                                                     # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                          # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                       # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on usersBtn                                        # stepsDefinition.PaginationStepDef.administrator_clicks_on_users_button()
+  And Administartor on ThirdPage                                               # stepsDefinition.PaginationStepDef.administartor_on_third_page()
+  And Administrator clicks the previousButton to go back to the previousPage   # stepsDefinition.PaginationStepDef.administrator_clicks_the_previous_button_to_go_back_to_the_previous_page()
+  Then Administrator should be on the previousPage of the user list            # stepsDefinition.PaginationStepDef.administrator_should_be_on_the_previous_page_of_the_user_list()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 62037
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:21:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the presence of pagination and navigate through the user list #3" classname="Pagination" time="4.684">
+    <system-out><![CDATA[
+@Pagination @LastPage
+Scenario: Verify the presence of pagination and navigate through the user list # src/test/resources/features/PaginationCucumber.feature:24
+  Given user on login page                                                     # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                          # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                       # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on usersBtn                                        # stepsDefinition.PaginationStepDef.administrator_clicks_on_users_button()
+  And Administrator clicks the lastButton to go to the lastPage                # stepsDefinition.PaginationStepDef.administrator_clicks_the_last_button_to_go_to_the_last_page()
+  Then Administrator should be on the lastPage of the user list                # stepsDefinition.PaginationStepDef.administrator_should_be_on_the_last_page_of_the_user_list()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 61749
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:21:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the presence of pagination and navigate through the user list #4" classname="Pagination" time="4.276">
+    <system-out><![CDATA[
+@Pagination @FirstPage
+Scenario: Verify the presence of pagination and navigate through the user list # src/test/resources/features/PaginationCucumber.feature:30
+  Given user on login page                                                     # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                          # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                       # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on usersBtn                                        # stepsDefinition.PaginationStepDef.administrator_clicks_on_users_button()
+  And Administartor on ThirdPage                                               # stepsDefinition.PaginationStepDef.administartor_on_third_page()
+  And Administrator clicks the firstButton to go back to the firstPage         # stepsDefinition.PaginationStepDef.administrator_clicks_the_first_button_to_go_back_to_the_first_page()
+  Then Administrator should be on the firstPage of the user list               # stepsDefinition.PaginationStepDef.administrator_should_be_on_the_first_page_of_the_user_list()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 38330
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:21:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1701688920.217][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Verify user search by keyword #1" classname="Search" time="4.095">
+    <system-out><![CDATA[
+@Search @SearchName
+Scenario: Verify user search by keyword                       # src/test/resources/features/Search.feature:11
+  Given user on login page                                    # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$         # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                      # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on users button                   # stepsDefinition.SearchStepDef.administrator_clicks_on_users_button()
+  And Administrator enters the name AYARI in the search field # stepsDefinition.SearchStepDef.administrator_enters_the_name_ayari_in_the_search_field()
+  Then display the user list filtered by name                 # stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_name()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 7094
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:22:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify user search by keyword #2" classname="Search" time="3.767">
+    <system-out><![CDATA[
+@Search @SearchFirstName
+Scenario: Verify user search by keyword                          # src/test/resources/features/Search.feature:17
+  Given user on login page                                       # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$            # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                         # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on users button                      # stepsDefinition.SearchStepDef.administrator_clicks_on_users_button()
+  And Administrator enters the firtname Asma in the search field # stepsDefinition.SearchStepDef.administrator_enters_the_firtname_asma_in_the_search_field()
+  Then display the user list filtered by firstname               # stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_firstname()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 56259
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:22:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify user search by keyword #3" classname="Search" time="4.151">
+    <system-out><![CDATA[
+@Search @SearchMail
+Scenario: Verify user search by keyword                                     # src/test/resources/features/Search.feature:23
+  Given user on login page                                                  # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$                       # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                                    # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on users button                                 # stepsDefinition.SearchStepDef.administrator_clicks_on_users_button()
+  And Administrator enters the mail asmaayari@gmail.com in the search field # stepsDefinition.SearchStepDef.administrator_enters_the_mail_asmaayari_gmail_com_in_the_search_field()
+  Then display the user list filtered by mail                               # stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_mail()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 61252
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:22:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify user search by keyword #4" classname="Search" time="3.654">
+    <system-out><![CDATA[
+@Search @SearchLetter
+Scenario: Verify user search by keyword                     # src/test/resources/features/Search.feature:29
+  Given user on login page                                  # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$       # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                    # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on users button                 # stepsDefinition.SearchStepDef.administrator_clicks_on_users_button()
+  And Administrator enters the letter Z in the search field # stepsDefinition.SearchStepDef.administrator_enters_the_letter_z_in_the_search_field()
+  Then display the user list filtered by letter             # stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_letter()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 48422
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:22:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Verify searching for a name in a table on different pages" classname="Search" time="43.625">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[contains(text(),&quot;Pas d&apos;utilisateurs trouvÃ©s.&quot;)]&quot;}&#10;  (Session info: chrome=119.0.6045.160)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;TALAN-6RL2VVA&apos;, ip: &apos;10.2.1.141&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d9afbb8007fd01eedcde21d824a1a3b5&#10;*** Element info: {Using=xpath, value=//td[contains(text(),&quot;Pas d&apos;utilisateurs trouvÃ©s.&quot;)]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),"Pas d'utilisateurs trouvÃ©s.")]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-6RL2VVA', ip: '10.2.1.141', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9afbb8007fd01eedcde21d824a1a3b5
+*** Element info: {Using=xpath, value=//td[contains(text(),"Pas d'utilisateurs trouvÃ©s.")]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.SearchPage.getUserListText5(SearchPage.java:58)
+	at stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_username(SearchStepDef.java:77)
+	at ✽.display the user list filtered by username(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Search.feature:39)
+]]></error>
+    <system-out><![CDATA[
+@Search @SearchNameInDifferentPages
+Scenario: Verify searching for a name in a table on different pages # src/test/resources/features/Search.feature:35
+  Given user on login page                                          # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$               # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                                            # stepsDefinition.LoginStepDef.user_is_connected()
+  When Administrator clicks on users button                         # stepsDefinition.SearchStepDef.administrator_clicks_on_users_button()
+  And Administrator enters the name AYARI in the search field       # stepsDefinition.SearchStepDef.administrator_enters_the_name_ayari_in_the_search_field()
+  And Administrator moves to another page                           # stepsDefinition.SearchStepDef.administrator_moves_to_another_page()
+  Then display the user list filtered by username                   # stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_username()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),"Pas d'utilisateurs trouvÃƒÂ©s.")]"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TALAN-6RL2VVA', ip: '10.2.1.141', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\fbesbes\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9afbb8007fd01eedcde21d824a1a3b5
+*** Element info: {Using=xpath, value=//td[contains(text(),"Pas d'utilisateurs trouvÃƒÂ©s.")]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.SearchPage.getUserListText5(SearchPage.java:58)
+	at stepsDefinition.SearchStepDef.display_the_user_list_filtered_by_username(SearchStepDef.java:77)
+	at âœ½.display the user list filtered by username(file:///C:/Users/fbesbes/Desktop/SeleniumCucumberProjetFinal/SeleniumCucumber/src/test/resources/features/Search.feature:39)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 16822
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:22:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="LogIn" classname="LogIn" time="2.954">
+    <system-out><![CDATA[
+@Login
+Scenario Outline: LogIn                               # src/test/resources/features/login.feature:11
+  Given user on login page                            # stepsDefinition.LoginStepDef.user_on_login_page()
+  When user enters mouna.makni@talan.com and Admin09$ # stepsDefinition.LoginStepDef.user_enters_email_and_password(java.lang.String,java.lang.String)
+  Then user is connected                              # stepsDefinition.LoginStepDef.user_is_connected()
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103}) on port 14499
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+déc. 04, 2023 12:23:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
